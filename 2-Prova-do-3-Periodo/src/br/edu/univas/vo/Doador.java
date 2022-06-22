@@ -2,12 +2,14 @@ package br.edu.univas.vo;
 
 public class Doador extends TipoSanguineo{
 	
-	private long cpf;
+	private int cpf;
 	private TipoSanguineo tipoSanguineo;
-	public long getCpf() {
+	
+	
+	public int getCpf() {
 		return cpf;
 	}
-	public void setCpf(long cpf) {
+	public void setCpf(int cpf) {
 		this.cpf = cpf;
 	}
 	public TipoSanguineo getTipoSanguineo() {

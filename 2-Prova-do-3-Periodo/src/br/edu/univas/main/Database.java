@@ -1,4 +1,5 @@
 package br.edu.univas.main;
+
 import br.edu.univas.vo.*;
 import java.util.ArrayList;
 import java.util.Scanner;
@@ -18,6 +19,8 @@ public class Database{
 
 	            if (option == 1) {
 	                cadastrarDoador(scanner, DoadorList);
+	            } else if (option == 2) {
+	                verBanco(DoadorList);
 	            } else if (option != 9) {
 	                System.out.println("Opção invalida!");
 	            }
@@ -57,6 +60,10 @@ public class Database{
 	        System.out.println("1 - Cadastrar Doador");
 	        System.out.println("2 - Listar Banco de Sangue");
 	        System.out.println("9 - Sair");
+	    }
+	    
+	    private static void verBanco(ArrayList<Doador> doadorList) {
+	    	
 	    }
 
 	    private static int readInteger(Scanner scanner) {

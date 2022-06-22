@@ -1,8 +1,11 @@
 package br.edu.univas.main;
-
+import br.edu.univas.vo.*;
+import java.util.ArrayList;
 import java.util.Scanner;
 
-public class Database {
+import br.edu.univas.vo.Doador;
+
+public class Database{
 
 	 public static void main(String[] args) {
 	        Scanner scanner = new Scanner(System.in);
@@ -14,9 +17,7 @@ public class Database {
 	            option = readInteger(scanner);
 
 	            if (option == 1) {
-	                cadastrarAluno(scanner, DoadorList);
-	            } else if (option == 2) {
-	                listarAlunosPosGraduacao(DoadorList);
+	                cadastrarDoador(scanner, DoadorList);
 	            } else if (option != 9) {
 	                System.out.println("Opção invalida!");
 	            }
@@ -39,16 +40,14 @@ public class Database {
 	            doador = new Doador();
 	        } 
 	        
-	        System.out.println("Digite o nome:");
-	        aluno.setNome(scanner.nextLine());
 	        System.out.println("Digite o cpf:");
-	        aluno.setCpf(readInteger(scanner));
+	        doador.getCpf(readInteger(scanner));
 
-	        if (alunoList.contains(aluno)) {
+	        if (DoadorList.contains(doador)) {
 	            System.out.println("Erro ao cadastrar Doador." +
-	                    "CPF jÃ¡ existe!");
+	                    "CPF já¡ existe!");
 	        } else {
-	            alunoList.add(aluno);
+	            DoadorList.add(doador);
 	            System.out.println("Doador cadastrado com sucesso!");
 	        }
 	    }
@@ -64,15 +63,6 @@ public class Database {
 	        int result = scanner.nextInt();
 	        scanner.nextLine();
 	        return result;
-	    }
-
-	    private static void listarAlunosPosGraduacao(ArrayList<Aluno> alunoList) {
-	        for (int i = 0; i < alunoList.size(); i++) {
-	            Aluno aluno = alunoList.get(i);
-	            if (aluno instanceof PosGraducao) {
-	                System.out.println(aluno);
-	            }
-	        }
 	    }
 	        
 	}

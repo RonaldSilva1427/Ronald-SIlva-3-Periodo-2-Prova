@@ -1,21 +1,11 @@
 package br.edu.univas.vo;
 
-public class DoadorController {
+public class DoadorController extends Doador {
+    public static void cadastrarDoador(long cfp, String tipoSanguioneo){
 
-	private Doador cadastrarDoador;
-	private Doador getCadastrarDoador() {
-		return cadastrarDoador;
-	}
-	private void setCadastrarDoador(Doador cadastrarDoador) {
-		this.cadastrarDoador = cadastrarDoador;
-	}
-	private TipoSanguineo getCadastraDoacao() {
-		return cadastraDoacao;
-	}
-	private void setCadastraDoacao(TipoSanguineo cadastraDoacao) {
-		this.cadastraDoacao = cadastraDoacao;
-	}
-	private TipoSanguineo cadastraDoacao;
-	
-	
+    }
+    public static void cadastrarDoacao(String tipoSanguineo, long quantidade){
+
+    }
+
 }

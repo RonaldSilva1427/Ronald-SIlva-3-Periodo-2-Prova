@@ -2,62 +2,62 @@ package br.edu.univas.vo;
 
 public class TipoSanguineo {
 
-	  private String APOSITIVO;
-	  private String ANEGATIVO;
-	  private String BPOSITIVO;
-	  private String BNEGATIVO;
-	  private String getAPOSITIVO() {
+	private String APOSITIVO;
+	private String ANEGATIVO;
+	private String BPOSITIVO;
+	private String BNEGATIVO;
+	private String ABPOSITIVO;
+	private String ABNEGATIVO;
+	private String OPOSITIVO;
+	private String ONEGATIVO;
+
+	public String getAPOSITIVO() {
 		return APOSITIVO;
 	}
-	private void setAPOSITIVO(String aPOSITIVO) {
+	public void setAPOSITIVO(String aPOSITIVO) {
 		APOSITIVO = aPOSITIVO;
 	}
-	private String getANEGATIVO() {
+	public String getANEGATIVO() {
 		return ANEGATIVO;
 	}
-	private void setANEGATIVO(String aNEGATIVO) {
+	public void setANEGATIVO(String aNEGATIVO) {
 		ANEGATIVO = aNEGATIVO;
 	}
-	private String getBPOSITIVO() {
+	public String getBPOSITIVO() {
 		return BPOSITIVO;
 	}
-	private void setBPOSITIVO(String bPOSITIVO) {
+	public void setBPOSITIVO(String bPOSITIVO) {
 		BPOSITIVO = bPOSITIVO;
 	}
-	private String getBNEGATIVO() {
+	public String getBNEGATIVO() {
 		return BNEGATIVO;
 	}
-	private void setBNEGATIVO(String bNEGATIVO) {
+	public void setBNEGATIVO(String bNEGATIVO) {
 		BNEGATIVO = bNEGATIVO;
 	}
-	private String getABPOSITIVO() {
+	public String getABPOSITIVO() {
 		return ABPOSITIVO;
 	}
-	private void setABPOSITIVO(String aBPOSITIVO) {
+	public void setABPOSITIVO(String aBPOSITIVO) {
 		ABPOSITIVO = aBPOSITIVO;
 	}
-	private String getABNEGATIVO() {
+	public String getABNEGATIVO() {
 		return ABNEGATIVO;
 	}
-	private void setABNEGATIVO(String aBNEGATIVO) {
+	public void setABNEGATIVO(String aBNEGATIVO) {
 		ABNEGATIVO = aBNEGATIVO;
 	}
-	private String getOPOSITIVO() {
+	public String getOPOSITIVO() {
 		return OPOSITIVO;
 	}
-	private void setOPOSITIVO(String oPOSITIVO) {
+	public void setOPOSITIVO(String oPOSITIVO) {
 		OPOSITIVO = oPOSITIVO;
 	}
-	private String getONEGATIVO() {
+	public String getONEGATIVO() {
 		return ONEGATIVO;
 	}
-	private void setONEGATIVO(String oNEGATIVO) {
+	public void setONEGATIVO(String oNEGATIVO) {
 		ONEGATIVO = oNEGATIVO;
 	}
-	private String ABPOSITIVO;
-	  private String ABNEGATIVO;
-	  private String OPOSITIVO;
-	  private String ONEGATIVO;
-	   
 
 }

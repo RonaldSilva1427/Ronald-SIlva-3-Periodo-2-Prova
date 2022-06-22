@@ -1,23 +1,22 @@
 package br.edu.univas.vo;
 
-public class Doador extends TipoSanguineo{
-	
-	private int cpf;
-	private TipoSanguineo tipoSanguineo;
-	
-	
-	public int getCpf() {
-		return cpf;
-	}
-	public void setCpf(int cpf) {
-		this.cpf = cpf;
-	}
-	public TipoSanguineo getTipoSanguineo() {
-		return tipoSanguineo;
-	}
-	public void setTipoSanguineo(TipoSanguineo tipoSanguineo) {
-		this.tipoSanguineo = tipoSanguineo;
-	}
-	
+public class Doador{
+    private long cpf;
+    private String tipoSanguineo;
 
+    public long getCpf() {
+        return cpf;
+    }
+
+    public void setCpf(long cpf) {
+        this.cpf = cpf;
+    }
+
+    public String getTipoSanguineo() {
+        return tipoSanguineo;
+    }
+
+    public void setTipoSanguineo(String tipoSanguineo) {
+        this.tipoSanguineo = tipoSanguineo;
+    }
 }
